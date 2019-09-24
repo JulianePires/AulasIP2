@@ -25,5 +25,16 @@ public class Point3D extends Point2D {
 		setXY(x,y);
 	}
 	
-	
+	public float[] getXYZ(float x, float y, float z) {
+		float[] xyz = new float[3];
+		xyz[0] = x;
+		xyz[1] = y;
+		xyz[2] = z;
+		return xyz;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() +"| z = " + z;
+	}
 }

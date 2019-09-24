@@ -1,15 +1,13 @@
-package br.ufrpe.ip2_heranca.point3D;
+package br.ufrpe.ip2_heranca.movablePoint;
 
-public abstract class Point2D {
-	private float	x = 0.0f;
-	private float	y = 0.0f;
-	
-	public Point2D() {
-		super();
+public class Point {
+	private float		x = 0.0f;
+	private float 		y = 0.0f;
+		
+	public Point() {
 	}
 
-	public Point2D(float x, float y) {
-		super();
+	public Point(float x, float y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -45,4 +43,5 @@ public abstract class Point2D {
 	public String toString() {
 		return "x = " + x + "| y = " + y;
 	}
+	
 }
